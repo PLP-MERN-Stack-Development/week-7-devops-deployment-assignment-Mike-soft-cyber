@@ -70,6 +70,67 @@ Your work will be automatically submitted when you push to your GitHub Classroom
 4. Document your API and setup process in the README.md
 5. Include screenshots of your working application
 
+# MERN Blog
+
+A full-stack blog application built with **MongoDB, Express, React, and Node.js (MERN)**.
+
+---
+
+## 📚 **Table of Contents**
+
+- [Features](#features)
+- [API Endpoints](#api-endpoints)
+- [Setup Instructions](#setup-instructions)
+- [Environment Variables](#environment-variables)
+- [Scripts](#scripts)
+- [Folder Structure](#folder-structure)
+- [License](#license)
+
+---
+
+## ✨ **Features**
+
+✅ Create, read, update, and delete (CRUD) blog posts  
+✅ RESTful API with Express.js and Mongoose  
+✅ React front-end styled with **Tailwind CSS** and **shadcn/ui**  
+✅ Axios for API calls  
+✅ React Router for navigation
+
+---
+
+## 🔗 **API Endpoints**
+
+**Base URL:** `http://localhost:5000/posts`
+
+| Method | Endpoint    | Description             |
+| ------ | ----------- | ----------------------- |
+| GET    | /posts      | Get all posts           |
+| GET    | /posts/:id  | Get a single post by ID |
+| POST   | /posts      | Create a new post       |
+| PUT    | /posts/:id  | Update a post by ID     |
+| DELETE | /posts/:id  | Delete a post by ID     |
+
+---
+
+### 📥 **POST /posts**
+
+**Request Body Example**
+
+```json
+{
+  "title": "My First Blog Post",
+  "body": "This is the content of my post.",
+  "author": "Michael Kariuki"
+}
+
+## **1. Clone the repository**
+
+```bash
+git clone https://github.com/PLP-MERN-Stack-Development/week-4-mern-integration-assignment-Mike-soft-cyber.git
+cd week-4-mern-integration-assignment-Mike-soft-cyber
+
+
+
 ## Resources
 
 - [MongoDB Documentation](https://docs.mongodb.com/)
