@@ -1,6 +1,5 @@
-<<<<<<< HEAD
-// api.js - API service for making requests to the backend
 
+// api.js - API service for making requests to the backend
 import axios from 'axios';
 
 // Create axios instance with base URL
@@ -135,10 +134,3 @@ export const authService = {
 };
 
 export default api; 
-=======
-import axios from 'axios';
-
-export default axios.create({
-  baseURL: 'http://localhost:5000'
-});
->>>>>>> 6fb98ae (first commit)
