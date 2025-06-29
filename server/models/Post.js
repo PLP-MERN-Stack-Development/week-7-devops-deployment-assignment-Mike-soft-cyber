@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Post.js - Mongoose model for blog posts
 
 const mongoose = require('mongoose');
@@ -98,3 +99,15 @@ PostSchema.methods.incrementViewCount = function () {
 };
 
 module.exports = mongoose.model('Post', PostSchema); 
+=======
+const mongoose = require('mongoose')
+
+const postSchema = new mongoose.Schema({
+    title: {type: String, required: true},
+    body: {type: String, required: true},
+    author: {type: String, required: true},
+    dateCreated: {type: Date, default: Date.now}
+})
+
+module.exports = mongoose.model("Post", postSchema)
+>>>>>>> 6fb98ae (first commit)
