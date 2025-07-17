@@ -35,6 +35,20 @@ if (process.env.NODE_ENV === 'development') {
   });
 }
 
+const helmet = require('helmet');
+app.use(helmet());
+
+const morgan = require('morgan');
+app.use(morgan('combined'));
+
+
+
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Something broke!');
+});
+
+
 // API routes
 app.use('/api/posts', postRoutes);
 app.use('/api/categories', categoryRoutes);
